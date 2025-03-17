@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to FinTech</title>
+  <!-- Ensure the CSS file name matches your project -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="login-container">
+    <div id="greeting">
+      <h1>Welcome to FinTech!</h1>
+    </div>
+    <div id="buttonContainer">
+      <button id="registerToggle">Sign Up</button>
+      <button id="loginToggle">Log In</button>
+    </div>
+    
+    <form id="registerForm" class="form" style="display: none;">
+      <label for="MailId">Mail Id:</label>
+      <input type="email" id="MailId" placeholder="Enter Your Mail Id" required>
+      
+      <label for="newPassword">Create Password:</label>
+      <input type="password" id="newPassword" placeholder="Choose a password" required>
+      
+      <button type="button" id="registerButton">Register</button>
+    </form>
+
+    <form id="loginForm" class="form" style="display: none;">
+      <label for="existingEmail">Enter Your Mail Id:</label>
+      <input type="email" id="existingEmail" placeholder="Enter your mail id" required>
+      
+      <label for="existingPassword">Password:</label>
+      <input type="password" id="existingPassword" placeholder="Enter your password" required autocomplete="current-password">
+      
+      <button type="button" id="loginButton">Login</button>
+    </form>
+
+    <p id="message"></p>
+    <div class="additional-features">
+      <button id="forgotPassword">Forgot Password?</button>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
